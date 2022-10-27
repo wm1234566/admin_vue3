@@ -1,0 +1,35 @@
+$bg: #2d3a4b;
+$dark_gray: #889aa4;
+$light_gray: #eee;
+$cursor: #fff;
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,
+#app,
+html {
+	height: 100%;
+	background-color: #293a4dff;
+	font-family: Helvetica Neue，Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei，Arial, sans-serif;
+}
+// 去掉ava的背景
+.el-avatar {
+	--el-avatar-bg-color: none;
+}
+
+//修改NProgress进度条颜色
+#nprogress .bar {
+	background-color: #e72f6f !important;
+	height: 3px;
+}
+
+// 清除浮动
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
